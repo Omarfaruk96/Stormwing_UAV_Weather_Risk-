@@ -1,2 +1,2 @@
 # Stormwing_UAV_Weather_Risk-
-ML-powered UAV flight-risk predictor using METAR/TAF aviation weather data — compares RandomForest, LSTM, and LSTM+attention models to score wind, gust, icing, and visibility risk for drone go/no-go decisions.
+StormWing predicts a 0–100 flight-risk score and risk category (LOW/MODERATE/HIGH/NO-FLY) for UAV operations from real-time or historical aviation weather data. It fuses wind, gust, crosswind, icing, visibility, and ceiling signals into a feature pipeline, then compares three model architectures — a RandomForest baseline, an LSTM for detecting deteriorating weather trends, and an LSTM with self-attention for explainable risk scoring — exposed via a FastAPI endpoint for integration into real UAV mission-planning systems.
